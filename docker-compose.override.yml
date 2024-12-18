@@ -1,4 +1,3 @@
-version: '3.9'
 
 services:
   cruding.api:
@@ -84,3 +83,7 @@ services:
     restart: unless-stopped
     tty: true
     stdin_open: true
+
+volumes:
+  pgdata:
+    driver: local
