@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33626.354
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDing.API", "CRUDing\CRUDing.API.csproj", "{1FB5AFEC-0913-47EE-A831-5C6A1629317C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E2B4CEC-2F2F-4802-924A-183935023C33} = {6E2B4CEC-2F2F-4802-924A-183935023C33}
+		{78E4F919-1D4F-444E-B09D-FE86435C24DD} = {78E4F919-1D4F-444E-B09D-FE86435C24DD}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDing.Domain", "CRUDing.Domain\CRUDing.Domain.csproj", "{78E4F919-1D4F-444E-B09D-FE86435C24DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDing.Core", "CRUDing.Core\CRUDing.Core.csproj", "{E588E12F-B622-415C-85D2-AAA7D6F8D8EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDing.DAL", "CRUDing.DAL\CRUDing.DAL.csproj", "{6E2B4CEC-2F2F-4802-924A-183935023C33}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9FD3D9F0-6CF2-4A7F-A27A-B88E0BB3E56D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FB5AFEC-0913-47EE-A831-5C6A1629317C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB5AFEC-0913-47EE-A831-5C6A1629317C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB5AFEC-0913-47EE-A831-5C6A1629317C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB5AFEC-0913-47EE-A831-5C6A1629317C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E4F919-1D4F-444E-B09D-FE86435C24DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E4F919-1D4F-444E-B09D-FE86435C24DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E4F919-1D4F-444E-B09D-FE86435C24DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E4F919-1D4F-444E-B09D-FE86435C24DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E588E12F-B622-415C-85D2-AAA7D6F8D8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E588E12F-B622-415C-85D2-AAA7D6F8D8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E588E12F-B622-415C-85D2-AAA7D6F8D8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E588E12F-B622-415C-85D2-AAA7D6F8D8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2B4CEC-2F2F-4802-924A-183935023C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2B4CEC-2F2F-4802-924A-183935023C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2B4CEC-2F2F-4802-924A-183935023C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2B4CEC-2F2F-4802-924A-183935023C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD3D9F0-6CF2-4A7F-A27A-B88E0BB3E56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD3D9F0-6CF2-4A7F-A27A-B88E0BB3E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD3D9F0-6CF2-4A7F-A27A-B88E0BB3E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD3D9F0-6CF2-4A7F-A27A-B88E0BB3E56D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A04FF44D-A51E-484F-90DE-7817E5298115}
+	EndGlobalSection
+EndGlobal

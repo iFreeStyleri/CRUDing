@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  cruding.api:
+    image: ${DOCKER_REGISTRY-}crudingapi
+    build:
+      context: .
+      dockerfile: CRUDing/Dockerfile
