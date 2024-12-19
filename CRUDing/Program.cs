@@ -35,17 +35,14 @@ builder.Host.ConfigureLogging(logging =>
     logging.AddSerilog();
 }).UseSerilog();
 
-services.AddStackExchangeRedisCache(options =>
+services.AddStackExchangeRedisCache(opt =>
 {
-    var redisOpt = configuration.GetSection("Redis");
-    options.Configuration = redisOpt["Configuration"];
-    options.InstanceName = redisOpt["InstanceName"];
-    options.ConfigurationOptions = new ConfigurationOptions
-    {
-        ClientName = redisOpt["ClientName"],
-        Password = redisOpt["Password"]
-    };
-
+    var redis = configuration
+        .GetSection("Aspire")
+        .GetSection("StackExchange")
+        .GetSection("Redis");
+    opt.Configuration = redis["ConnectionString"];
+    opt.InstanceName = redis["InstanceName"];
 });
 services.AddSwaggerGen(options =>
 {
