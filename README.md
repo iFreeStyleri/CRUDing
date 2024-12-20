@@ -7,15 +7,15 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 Далее развёртываются три контейнера: Redis, PostgreSQL и CRUDing.API.
 |Наименование|Внешний порт по умолчанию|
 |------------|-------------------------|
-|Redis|6380|
-|PostgreSQL|5430|
-|CRUDing.API|5280|
+|Redis|`6380`|
+|PostgreSQL|`5430`|
+|CRUDing.API|`5280`|
 ## User Controller
 ### GET `/api/carts`
 #### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
-|page|int| page >= 0|
+|page|int|`page >= 0`|
 #### Response Parameters
 |Parameter|Type|Description|
 |----|-----|-----------|
