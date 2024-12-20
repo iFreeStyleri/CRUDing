@@ -21,10 +21,10 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |----|-----|-----------|
 |code|int| Response status code|
 |Data: >products|array| Массив продуктов в корзине|
-|Data: >products[0]: id|int| id добавленного промежуточного элемента|
-|Data: >products[1]: productId|int| id продукта|
+|Data: >products[0]: id|int| `id` добавленного промежуточного элемента|
+|Data: >products[1]: productId|int| `id` продукта|
 |Data: >products[2]: productName|string| наименование продукта|
-|Data: >products[3]: cartId|int| id корзины|
+|Data: >products[3]: cartId|int| `id` корзины|
 |Data: >products[4]: count|int| `count > 0`, количество продукта в корзине|
 |Data: >products[5]: >cost[0]: currency|string|Валюта|
 |Data: >products[5]: >cost[0]: value|decimal|Стоимость|
@@ -38,7 +38,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 #### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
-|productId|int|id продукта|
+|productId|int|`id` продукта|
 #### Response Parameters
 |Parameter|Type|Description|
 |----|-----|-----------|
@@ -51,7 +51,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 #### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
-|productId|int|id продукта|
+|productId|int|`id` продукта|
 #### Response Parameters
 |Parameter|Type|Description|
 |----|-----|-----------|
@@ -64,7 +64,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 #### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
-|productId|int|id продукта|
+|productId|int|`id` продукта|
 |count|int|кол-во товара в корзине, `count > 0`|
 #### Response Parameters
 |Parameter|Type|Description|
@@ -87,7 +87,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 #### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
-|id|int?|id категории|
+|id|int?|`id` категории|
 |page|int?|номер страницы с категориями|
 #### Response Parameters
 |Parameter|Type|Description|
