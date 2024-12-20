@@ -32,7 +32,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |Data: totalCost: >cost[1]: value|decimal|Общая стоимость корзины|
 |message|string?|Сообщение об ошибке|
 
-Возвращает n элементов в корзине пользователя
+Возвращает `n элементов` в корзине пользователя
 
 ### POST `/api/carts`
 #### HTTP Requests
@@ -98,7 +98,7 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |>Data[1]: name|string| наименование продукта|
 |message|string?|Сообщение об ошибке|
 
-Получение категории по id или номеру страницы
+Получение категории по `id` или номеру страницы
 
 
 
