@@ -1,5 +1,5 @@
 # CRUDing
-Пет-проект, показывающий реализацию монолита на языке C#, с использованием ASP.NET, Redis и PostgreSQL, а также реализует JWT-авторизацию.
+Пет-проект, показывающий реализацию "монолита" на языке C#, с использованием ASP.NET, Redis и PostgreSQL, а также реализует JWT-авторизацию.
 ## Instalation
 ```
 git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compose up -d
@@ -11,13 +11,12 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |PostgreSQL|5430|
 |CRUDing.API|5280|
 ## User Controller
-Возвращает n элементов в корзине пользователя
-### HTTP Request
-GET `/api/carts`
+### GET `/api/carts`
+#### HTTP Requests
 |Parameter|Type|Description|
 |----|-----|-----------|
 |page|int| page >= 0|
-### Response Parameters
+#### Response Parameters
 |Parameter|Type|Description|
 |----|-----|-----------|
 |code|int| Response status code|
@@ -32,3 +31,6 @@ GET `/api/carts`
 |Data: totalCost: >cost[0]: currency|string|Валюта|
 |Data: totalCost: >cost[1]: value|decimal|Общая стоимость корзины|
 |message|string?|Сообщение об ошибке|
+
+Возвращает n элементов в корзине пользователя
+
