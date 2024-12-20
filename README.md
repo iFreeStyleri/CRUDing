@@ -21,15 +21,15 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |----|-----|-----------|
 |code|int| Response status code|
 |Data: >products|array| Массив продуктов в корзине|
-|Data: >products[0]: id|int| `id` добавленного промежуточного элемента|
-|Data: >products[1]: productId|int| `id` продукта|
-|Data: >products[2]: productName|string| наименование продукта|
-|Data: >products[3]: cartId|int| `id` корзины|
-|Data: >products[4]: count|int| `count > 0`, количество продукта в корзине|
-|Data: >products[5]: >cost[0]: currency|string|Валюта|
-|Data: >products[5]: >cost[0]: value|decimal|Стоимость|
-|Data: totalCost: >cost[0]: currency|string|Валюта|
-|Data: totalCost: >cost[1]: value|decimal|Общая стоимость корзины|
+|Data: >products[0]: `id`|int| `id` добавленного промежуточного элемента|
+|Data: >products[1]: `productId`|int| `id` продукта|
+|Data: >products[2]: `productName`|string| наименование продукта|
+|Data: >products[3]: `cartId`|int| `id` корзины|
+|Data: >products[4]: `count`|int| `count > 0`, количество продукта в корзине|
+|Data: >products[5]: >cost[0]: `currency`|string|Валюта|
+|Data: >products[5]: >cost[0]: `value`|decimal|Стоимость|
+|Data: totalCost: >cost[0]: `currency`|string|Валюта|
+|Data: totalCost: >cost[1]: `value`|decimal|Общая стоимость корзины|
 |message|string?|Сообщение об ошибке|
 
 Возвращает `n элементов` в корзине пользователя
@@ -94,8 +94,8 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |----|-----|-----------|
 |code|int| Response status code|
 |Data|array| Массив продуктов в корзине|
-|>Data[0]: id|int| `id` категории|
-|>Data[1]: name|string| наименование продукта|
+|>Data[0]: `id`|int| `id` категории|
+|>Data[1]: `name`|string| наименование продукта|
 |message|string?|Сообщение об ошибке|
 
 Получение категории по `id` или номеру страницы
