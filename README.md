@@ -34,3 +34,27 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 
 Возвращает n элементов в корзине пользователя
 
+### POST `/api/carts`
+#### HTTP Requests
+|Parameter|Type|Description|
+|----|-----|-----------|
+|productId|int|id продукта|
+#### Response Parameters
+|Parameter|Type|Description|
+|----|-----|-----------|
+|code|int| Response status code|
+|message|string?|Сообщение об ошибке|
+
+Добавляет продукт в корзину
+
+### DELETE `/api/carts`
+#### HTTP Requests
+|Parameter|Type|Description|
+|----|-----|-----------|
+|productId|int|id продукта|
+#### Response Parameters
+|Parameter|Type|Description|
+|----|-----|-----------|
+|code|int| Response status code|
+|message|string?|Сообщение об ошибке|
+Удаляет товар из корзины пользователя
