@@ -57,4 +57,5 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 |----|-----|-----------|
 |code|int| Response status code|
 |message|string?|Сообщение об ошибке|
+
 Удаляет товар из корзины пользователя
