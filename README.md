@@ -100,6 +100,6 @@ git clone https://github.com/iFreeStyleri/CRUDing && cd /CRUDing && docker compo
 
 Получение категории по `id` или номеру страницы
 
-
+To be continue...
 
 
